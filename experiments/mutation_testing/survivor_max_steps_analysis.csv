@@ -1,0 +1,13 @@
+Model,Mutant,StateLimit,AddressCardinality,Outcome,Reason,TraceLength,States,TimeMs,Status
+erc20,remove_total_supply_update,20000,10,Timeout,Timeout,,,30053,timeout
+erc20,transfer_from_does_not_debit_owner,20000,10,Timeout,Timeout,,,30048,timeout
+erc20,allowance_increases_on_spend,20000,10,Timeout,Timeout,,,30044,timeout
+erc20,remove_owner_balance_guard,20000,10,Timeout,Timeout,,,30054,timeout
+erc20,mint_subtracts_balance,20000,10,Timeout,Timeout,,,30044,timeout
+escrow,refund_keeps_balance,20000,10,Survived,Expected terminal deadlock,,88,11417,pass
+access_control,remove_owner_check,20000,10,Survived,Expected terminal deadlock,,204,10075,pass
+nft,remove_transfer_owner_check,20000,10,Timeout,Timeout,,,30047,timeout
+nft,mint_does_not_mark_token,20000,10,Survived,Expected terminal deadlock,,501,10438,pass
+multisig,allow_zero_threshold,20000,10,Timeout,Timeout,,,30045,timeout
+multisig,execute_below_threshold,20000,10,Timeout,Timeout,,15361,30039,timeout
+auction,allow_non_improving_bid,20000,10,Capped,Invariant bound reached; expected terminal deadlock,,20000,32153,capped

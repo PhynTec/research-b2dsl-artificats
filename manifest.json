@@ -1,0 +1,164 @@
+[
+  {
+    "family": "access_control",
+    "role": "baseline authorization example",
+    "solidity": "Solidity/access_control.sol",
+    "dsl": "examples/access_control.dsl",
+    "offensive_b": "examples/access_control.mch",
+    "defensive_b": "examples/defensive/access_control.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "arithmetic_ops",
+    "role": "language-feature example",
+    "solidity": "",
+    "dsl": "examples/arithmetic_ops.dsl",
+    "offensive_b": "examples/arithmetic_ops.mch",
+    "defensive_b": "examples/defensive/arithmetic_ops.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "auction",
+    "role": "baseline lifecycle and monotonicity example",
+    "solidity": "Solidity/auction.sol",
+    "dsl": "examples/auction.dsl",
+    "offensive_b": "examples/auction.mch",
+    "defensive_b": "examples/defensive/auction.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "conditional_fee",
+    "role": "conditional-update example",
+    "solidity": "Solidity/conditional_fee.sol",
+    "dsl": "examples/conditional_fee.dsl",
+    "offensive_b": "examples/conditional_fee.mch",
+    "defensive_b": "examples/defensive/conditional_fee.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "context_access_control",
+    "role": "execution-context example",
+    "solidity": "",
+    "dsl": "examples/context_access_control.dsl",
+    "offensive_b": "examples/context_access_control.mch",
+    "defensive_b": "examples/defensive/context_access_control.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "erc20_full",
+    "role": "ERC20-style nested-map case study",
+    "solidity": "Solidity/erc20_full.sol",
+    "dsl": "examples/erc20_full.dsl",
+    "offensive_b": "examples/erc20_full.mch",
+    "defensive_b": "examples/defensive/erc20_full.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "escrow",
+    "role": "lifecycle and role-separation example",
+    "solidity": "Solidity/escrow.sol",
+    "dsl": "examples/escrow.dsl",
+    "offensive_b": "examples/escrow.mch",
+    "defensive_b": "examples/defensive/escrow.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "loan_book",
+    "role": "struct and record-map example",
+    "solidity": "",
+    "dsl": "examples/loan_book.dsl",
+    "offensive_b": "examples/loan_book.mch",
+    "defensive_b": "examples/defensive/loan_book.mch",
+    "evidence": "examples/README.md"
+  },
+  {
+    "family": "multisig",
+    "role": "threshold-authorization example",
+    "solidity": "Solidity/multisig.sol",
+    "dsl": "examples/multisig.dsl",
+    "offensive_b": "examples/multisig.mch",
+    "defensive_b": "examples/defensive/multisig.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "nft_sketch",
+    "role": "ownership-map example",
+    "solidity": "Solidity/nft_sketch.sol",
+    "dsl": "examples/nft_sketch.dsl",
+    "offensive_b": "examples/nft_sketch.mch",
+    "defensive_b": "examples/defensive/nft_sketch.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "simple_vault",
+    "role": "vault/accounting example",
+    "solidity": "Solidity/buggy_vault.sol",
+    "dsl": "examples/simple_vault.dsl",
+    "offensive_b": "examples/simple_vault.mch",
+    "defensive_b": "examples/defensive/simple_vault.mch",
+    "evidence": "experiments/fault_injections/buggy_vault.mch"
+  },
+  {
+    "family": "token_state",
+    "role": "fungible-token accounting example",
+    "solidity": "Solidity/token_state.sol",
+    "dsl": "examples/token_state.dsl",
+    "offensive_b": "examples/token_state.mch",
+    "defensive_b": "examples/defensive/token_state.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "voting",
+    "role": "tally/accounting example",
+    "solidity": "Solidity/voting.sol",
+    "dsl": "examples/voting.dsl",
+    "offensive_b": "examples/voting.mch",
+    "defensive_b": "examples/defensive/voting.mch",
+    "evidence": "verification/verification_report.md"
+  },
+  {
+    "family": "buggy_vault",
+    "role": "worked seeded-fault example",
+    "solidity": "experiments/fault_injections/BuggyVault.sol",
+    "dsl": "experiments/fault_injections/buggy_vault.dsl",
+    "offensive_b": "experiments/fault_injections/buggy_vault.mch",
+    "defensive_b": "",
+    "evidence": "experiments/fault_injections/seeded_faults_separated_report.md"
+  },
+  {
+    "family": "erc20_missing_mint_supply_update",
+    "role": "seeded ERC20 supply fault",
+    "solidity": "experiments/fault_injections/Erc20MissingMintSupplyUpdate.sol",
+    "dsl": "experiments/fault_injections/erc20_missing_mint_supply_update.dsl",
+    "offensive_b": "experiments/fault_injections/erc20_missing_mint_supply_update.mch",
+    "defensive_b": "",
+    "evidence": "experiments/fault_injections/prob_matrix_results_separated.csv"
+  },
+  {
+    "family": "escrow_missing_positive_deposit_guard",
+    "role": "seeded escrow guard fault",
+    "solidity": "experiments/fault_injections/EscrowMissingPositiveDepositGuard.sol",
+    "dsl": "experiments/fault_injections/escrow_missing_positive_deposit_guard.dsl",
+    "offensive_b": "experiments/fault_injections/escrow_missing_positive_deposit_guard.mch",
+    "defensive_b": "",
+    "evidence": "experiments/fault_injections/prob_matrix_results_separated.csv"
+  },
+  {
+    "family": "access_control_missing_value_guard",
+    "role": "seeded access-control guard fault",
+    "solidity": "",
+    "dsl": "experiments/fault_injections/access_control_missing_value_guard.dsl",
+    "offensive_b": "experiments/fault_injections/access_control_missing_value_guard.mch",
+    "defensive_b": "",
+    "evidence": "experiments/fault_injections/prob_matrix_results_separated.csv"
+  },
+  {
+    "family": "mutation_campaign",
+    "role": "20-mutant semantic mutation campaign",
+    "solidity": "",
+    "dsl": "",
+    "offensive_b": "",
+    "defensive_b": "",
+    "evidence": "experiments/mutation_testing/mutation_results.csv"
+  }
+]

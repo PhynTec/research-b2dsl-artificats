@@ -1,0 +1,4 @@
+"file","findings","checks","relevant_injected_fault"
+"slither_erc20_missing_mint_supply_update.json","3","naming-convention, naming-convention, constable-states","No"
+"slither_escrow_missing_positive_deposit_guard.json","4","naming-convention, immutable-states, immutable-states, immutable-states","No"
+"slither_buggy_vault.json","4","naming-convention, naming-convention, naming-convention, immutable-states","No"

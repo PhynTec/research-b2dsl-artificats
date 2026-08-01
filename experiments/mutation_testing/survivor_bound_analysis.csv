@@ -1,0 +1,25 @@
+Model,Mutant,StateLimit,AddressCardinality,Outcome,Reason,TraceLength,States,TimeMs,Status
+erc20,remove_total_supply_update,20000,10,Timeout,Timeout,,,60050,timeout
+erc20,remove_total_supply_update,20000,20,Timeout,Timeout,,,60045,timeout
+erc20,transfer_from_does_not_debit_owner,20000,10,Timeout,Timeout,,,60045,timeout
+erc20,transfer_from_does_not_debit_owner,20000,20,Timeout,Timeout,,,60055,timeout
+erc20,allowance_increases_on_spend,20000,10,Timeout,Timeout,,,60064,timeout
+erc20,allowance_increases_on_spend,20000,20,Timeout,Timeout,,,60046,timeout
+erc20,remove_owner_balance_guard,20000,10,Timeout,Timeout,,,60057,timeout
+erc20,remove_owner_balance_guard,20000,20,Timeout,Timeout,,,60043,timeout
+erc20,mint_subtracts_balance,20000,10,Timeout,Timeout,,,60038,timeout
+erc20,mint_subtracts_balance,20000,20,Timeout,Timeout,,,60063,timeout
+escrow,refund_keeps_balance,20000,10,Survived,Expected terminal deadlock,,88,11432,pass
+escrow,refund_keeps_balance,20000,20,Survived,Expected terminal deadlock,,88,11627,pass
+access_control,remove_owner_check,20000,10,Survived,Expected terminal deadlock,,52,12094,pass
+access_control,remove_owner_check,20000,20,Survived,Expected terminal deadlock,,52,11205,pass
+nft,remove_transfer_owner_check,20000,10,Timeout,Timeout,,,60059,timeout
+nft,remove_transfer_owner_check,20000,20,Timeout,Timeout,,,60069,timeout
+nft,mint_does_not_mark_token,20000,10,Survived,Expected terminal deadlock,,121,12398,pass
+nft,mint_does_not_mark_token,20000,20,Survived,Expected terminal deadlock,,121,11972,pass
+multisig,allow_zero_threshold,20000,10,Capped,Invariant bound reached; expected terminal deadlock,,20000,49293,capped
+multisig,allow_zero_threshold,20000,20,Timeout,Timeout,,,60053,timeout
+multisig,execute_below_threshold,20000,10,Survived,Expected terminal deadlock,,15361,37001,pass
+multisig,execute_below_threshold,20000,20,Timeout,Timeout,,,60052,timeout
+auction,allow_non_improving_bid,20000,10,Survived,Expected terminal deadlock,,5016,16540,pass
+auction,allow_non_improving_bid,20000,20,Survived,Expected terminal deadlock,,5016,16555,pass

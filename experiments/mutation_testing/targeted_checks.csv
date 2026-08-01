@@ -1,0 +1,11 @@
+Model,Mutant,Check,Command,Outcome,Reason,TraceLength,States,TimeMs
+erc20,remove_total_supply_update,symbolic_bmc,-symbolic_model_check bmc,Inconclusive,Model check incomplete,,,5025
+erc20,remove_total_supply_update,cbc_mint,-cbc mint,Timeout,CBC timeout,,,17800
+erc20,transfer_from_does_not_debit_owner,symbolic_bmc,-symbolic_model_check bmc,Inconclusive,Model check incomplete,,,4927
+erc20,transfer_from_does_not_debit_owner,cbc_transfer_from,-cbc transfer_from,Timeout,CBC timeout,,,17018
+erc20,allowance_increases_on_spend,symbolic_bmc,-symbolic_model_check bmc,Inconclusive,Model check incomplete,,,4649
+erc20,allowance_increases_on_spend,cbc_transfer_from,-cbc transfer_from,Timeout,CBC timeout,,,17971
+erc20,remove_owner_balance_guard,symbolic_bmc,-symbolic_model_check bmc,Inconclusive,Model check incomplete,,,4710
+erc20,remove_owner_balance_guard,cbc_transfer_from,-cbc transfer_from,Timeout,CBC timeout,,,17670
+erc20,mint_subtracts_balance,symbolic_bmc,-symbolic_model_check bmc,Inconclusive,Model check incomplete,,,4699
+erc20,mint_subtracts_balance,cbc_mint,-cbc mint,Timeout,CBC timeout,,,17183

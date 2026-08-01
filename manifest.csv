@@ -1,0 +1,19 @@
+family,role,solidity,dsl,offensive_b,defensive_b,evidence
+access_control,baseline authorization example,Solidity/access_control.sol,examples/access_control.dsl,examples/access_control.mch,examples/defensive/access_control.mch,verification/verification_report.md
+arithmetic_ops,language-feature example,,examples/arithmetic_ops.dsl,examples/arithmetic_ops.mch,examples/defensive/arithmetic_ops.mch,verification/verification_report.md
+auction,baseline lifecycle and monotonicity example,Solidity/auction.sol,examples/auction.dsl,examples/auction.mch,examples/defensive/auction.mch,verification/verification_report.md
+conditional_fee,conditional-update example,Solidity/conditional_fee.sol,examples/conditional_fee.dsl,examples/conditional_fee.mch,examples/defensive/conditional_fee.mch,verification/verification_report.md
+context_access_control,execution-context example,,examples/context_access_control.dsl,examples/context_access_control.mch,examples/defensive/context_access_control.mch,verification/verification_report.md
+erc20_full,ERC20-style nested-map case study,Solidity/erc20_full.sol,examples/erc20_full.dsl,examples/erc20_full.mch,examples/defensive/erc20_full.mch,verification/verification_report.md
+escrow,lifecycle and role-separation example,Solidity/escrow.sol,examples/escrow.dsl,examples/escrow.mch,examples/defensive/escrow.mch,verification/verification_report.md
+loan_book,struct and record-map example,,examples/loan_book.dsl,examples/loan_book.mch,examples/defensive/loan_book.mch,examples/README.md
+multisig,threshold-authorization example,Solidity/multisig.sol,examples/multisig.dsl,examples/multisig.mch,examples/defensive/multisig.mch,verification/verification_report.md
+nft_sketch,ownership-map example,Solidity/nft_sketch.sol,examples/nft_sketch.dsl,examples/nft_sketch.mch,examples/defensive/nft_sketch.mch,verification/verification_report.md
+simple_vault,vault/accounting example,Solidity/buggy_vault.sol,examples/simple_vault.dsl,examples/simple_vault.mch,examples/defensive/simple_vault.mch,experiments/fault_injections/buggy_vault.mch
+token_state,fungible-token accounting example,Solidity/token_state.sol,examples/token_state.dsl,examples/token_state.mch,examples/defensive/token_state.mch,verification/verification_report.md
+voting,tally/accounting example,Solidity/voting.sol,examples/voting.dsl,examples/voting.mch,examples/defensive/voting.mch,verification/verification_report.md
+buggy_vault,worked seeded-fault example,experiments/fault_injections/BuggyVault.sol,experiments/fault_injections/buggy_vault.dsl,experiments/fault_injections/buggy_vault.mch,,experiments/fault_injections/seeded_faults_separated_report.md
+erc20_missing_mint_supply_update,seeded ERC20 supply fault,experiments/fault_injections/Erc20MissingMintSupplyUpdate.sol,experiments/fault_injections/erc20_missing_mint_supply_update.dsl,experiments/fault_injections/erc20_missing_mint_supply_update.mch,,experiments/fault_injections/prob_matrix_results_separated.csv
+escrow_missing_positive_deposit_guard,seeded escrow guard fault,experiments/fault_injections/EscrowMissingPositiveDepositGuard.sol,experiments/fault_injections/escrow_missing_positive_deposit_guard.dsl,experiments/fault_injections/escrow_missing_positive_deposit_guard.mch,,experiments/fault_injections/prob_matrix_results_separated.csv
+access_control_missing_value_guard,seeded access-control guard fault,,experiments/fault_injections/access_control_missing_value_guard.dsl,experiments/fault_injections/access_control_missing_value_guard.mch,,experiments/fault_injections/prob_matrix_results_separated.csv
+mutation_campaign,20-mutant semantic mutation campaign,,,,,experiments/mutation_testing/mutation_results.csv

@@ -1,0 +1,28 @@
+Model,StateLimit,AddressCardinality,Outcome,Reason,TraceLength,States,TimeMs,Status,InvariantCommand,DeadlockCommand
+access_control_missing_value_guard,100,2,Killed,Invariant violation,2,2,5043,fail,-nodead -mc 100,-cbc_deadlock
+access_control_missing_value_guard,100,5,Killed,Invariant violation,2,1,5165,fail,-nodead -mc 100,-cbc_deadlock
+access_control_missing_value_guard,100,10,Killed,Invariant violation,2,1,4478,fail,-nodead -mc 100,-cbc_deadlock
+access_control_missing_value_guard,1000,2,Killed,Invariant violation,2,1,4501,fail,-nodead -mc 1000,-cbc_deadlock
+access_control_missing_value_guard,1000,5,Killed,Invariant violation,2,2,4334,fail,-nodead -mc 1000,-cbc_deadlock
+access_control_missing_value_guard,1000,10,Killed,Invariant violation,2,1,4439,fail,-nodead -mc 1000,-cbc_deadlock
+access_control_missing_value_guard,5000,2,Killed,Invariant violation,2,2,4250,fail,-nodead -mc 5000,-cbc_deadlock
+access_control_missing_value_guard,5000,5,Killed,Invariant violation,2,3,4139,fail,-nodead -mc 5000,-cbc_deadlock
+access_control_missing_value_guard,5000,10,Killed,Invariant violation,2,1,4214,fail,-nodead -mc 5000,-cbc_deadlock
+escrow_missing_positive_deposit_guard,100,2,Killed,Initialization failure,,0,4514,fail,-nodead -mc 100,-cbc_deadlock
+escrow_missing_positive_deposit_guard,100,5,Killed,Invariant violation,2,1,4562,fail,-nodead -mc 100,-cbc_deadlock
+escrow_missing_positive_deposit_guard,100,10,Killed,Invariant violation,2,3,4232,fail,-nodead -mc 100,-cbc_deadlock
+escrow_missing_positive_deposit_guard,1000,2,Killed,Initialization failure,,0,4126,fail,-nodead -mc 1000,-cbc_deadlock
+escrow_missing_positive_deposit_guard,1000,5,Killed,Invariant violation,2,3,4079,fail,-nodead -mc 1000,-cbc_deadlock
+escrow_missing_positive_deposit_guard,1000,10,Killed,Invariant violation,2,3,4349,fail,-nodead -mc 1000,-cbc_deadlock
+escrow_missing_positive_deposit_guard,5000,2,Killed,Initialization failure,,0,4346,fail,-nodead -mc 5000,-cbc_deadlock
+escrow_missing_positive_deposit_guard,5000,5,Killed,Invariant violation,2,3,4572,fail,-nodead -mc 5000,-cbc_deadlock
+escrow_missing_positive_deposit_guard,5000,10,Killed,Invariant violation,2,2,5124,fail,-nodead -mc 5000,-cbc_deadlock
+erc20_missing_mint_supply_update,100,2,Killed,Invariant violation,2,7,4697,fail,-nodead -mc 100,-cbc_deadlock
+erc20_missing_mint_supply_update,100,5,Killed,Invariant violation,2,8,4938,fail,-nodead -mc 100,-cbc_deadlock
+erc20_missing_mint_supply_update,100,10,Capped,Invariant bound reached; expected terminal deadlock,,100,10179,capped,-nodead -mc 100,-cbc_deadlock
+erc20_missing_mint_supply_update,1000,2,Killed,Invariant violation,3,6,4830,fail,-nodead -mc 1000,-cbc_deadlock
+erc20_missing_mint_supply_update,1000,5,Killed,Invariant violation,2,12,4715,fail,-nodead -mc 1000,-cbc_deadlock
+erc20_missing_mint_supply_update,1000,10,Capped,Invariant bound reached; expected terminal deadlock,,1000,12177,capped,-nodead -mc 1000,-cbc_deadlock
+erc20_missing_mint_supply_update,5000,2,Killed,Invariant violation,2,7,4606,fail,-nodead -mc 5000,-cbc_deadlock
+erc20_missing_mint_supply_update,5000,5,Killed,Invariant violation,3,3,4647,fail,-nodead -mc 5000,-cbc_deadlock
+erc20_missing_mint_supply_update,5000,10,Capped,Invariant bound reached; expected terminal deadlock,,5000,28699,capped,-nodead -mc 5000,-cbc_deadlock

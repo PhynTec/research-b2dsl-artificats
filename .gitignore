@@ -1,0 +1,17 @@
+__pycache__/
+.pytest_cache/
+.hypothesis/
+.tmp_tests/
+*.pyc
+*.pyo
+*.log
+*.prob
+*.dot
+*.counterexample.txt
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+texput.*
