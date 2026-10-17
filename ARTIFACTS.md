@@ -1,6 +1,6 @@
 # Artifact Index
 
-This artifact accompanies the CRiSIS 2026 submission:
+This artifact accompanies the current submission:
 
 **From Smart-Contract Audit Rules to Classical B: A Typed DSL for Bounded Invariant Checking**
 
