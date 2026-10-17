@@ -1,4 +1,4 @@
-# CRiSIS 2026 Artifact: Smart-Contract DSL to Classical B
+# Artifact: Smart-Contract DSL to Classical B
 
 This repository is the public artifact for the paper:
 
